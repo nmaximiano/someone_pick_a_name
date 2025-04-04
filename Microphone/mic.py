@@ -36,7 +36,7 @@ try:
             write_data("data/volume_level.json", {"timestamp" : time.time(), "average": sum(average) / len(average)})
             average = []
             continue
-        print(f"Volume Level: {sum(average) / len(average):.2f}")
+        # print(f"Volume Level: {sum(average) / len(average):.2f}")
 
 
 except KeyboardInterrupt:

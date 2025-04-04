@@ -8,7 +8,7 @@ def sms_reply():
     incoming_msg = request.form.get('Body').strip().lower()
 
     # Here you can customize your logic. For example:
-    if 'how busy' in incoming_msg:
+    if parse_message(incoming_msg):
         status = get_status()
     else:
         status = "Please send 'How Busy ?' to get a response."
@@ -25,3 +25,14 @@ if __name__ == '__main__':
     # Run the Flask app locally for testing
     app.run(debug=True)
 
+def parse_message(message : str):
+    valid_messages = [
+        "how busy"
+    ]
+    message = message.lower()
+
+    for valid in valid_messages:
+        if message in valid:
+            return True
+    return False
+    
