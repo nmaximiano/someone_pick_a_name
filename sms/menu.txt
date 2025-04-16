@@ -1,0 +1,389 @@
+Breakfast:
+  Uncategorized:
+    - Have A Nice Day
+  360 Breakfast:
+    - Scrambled Vegan Egg Substitute
+    - Sausage Gravy
+    - House Baked Buttermilk Biscuit
+    - Everything Omelet
+  Bliss:
+    - Coffee Cake
+    - Banana Streusel Muffin
+  Simple Breakfast:
+    - Fresh Cantaloupe Cubes
+    - Cinnamon Brown Sugar Steel Cut Oatmeal
+    - Hash Browns
+    - Fresh Honeydew Melon Cubes
+    - Pineapple
+    - Turkey Sausage Patty
+  Spikes Breakfast:
+    - Scrambled Eggs
+    - 10" Flour Tortilla
+    - Lyonnaise Potatoes
+    - Pork Sausage Links
+  Spoonfuls:
+    - Miso Stock
+    - Jasmine Rice (steamed)
+  Toast Bar:
+    - Smashed Avocado
+    - Hard-boiled Egg
+    - Sliced Red Radish
+    - Cherry Tomatoes
+    - Grape Jelly
+    - Fresh Spinach
+    - Classic Hummus
+    - Whipped Butter
+  Waffle Bar:
+    - Blueberries
+    - Whipped Butter
+    - Whipped Cream
+    - Chocolate Syrup
+    - Vanilla Belgian Waffle
+  Yogurt Bar:
+    - Yoplait Low Fat Vanilla Yogurt
+    - Strawberries
+    - Low Fat Strawberry Yogurt
+    - Oats & Honey Crunch Granola
+    - Vanilla Greek Yogurt
+    - Blueberries
+    - Low Fat Cottage Cheese
+
+Lunch:
+  Uncategorized:
+    - Have A Nice Day
+  360 Lunch:
+    - Jasmine Rice (steamed)
+    - Asian Vegetables
+    - Sesame Pork Cutlet
+  Bliss:
+    - Vanilla Pudding
+    - Two Butter Sugar Cookies
+    - Two Chocolate Chip Cookies
+    - Pound Cake
+    - Chocolate Chip Cookie
+  Cog Express:
+    - Jasmine Rice (steamed)
+    - Sesame Pork Cutlet
+    - Asian Vegetables
+  Deli:
+    - Sliced Black Olives
+    - Sourdough Bread
+    - Cheddar Cheese
+    - Yellow Mustard
+    - Roasted Portobello Mushrooms
+    - Fresh Arugula
+    - Green Leaf Lettuce
+    - Tuna Salad
+    - Robusto Caesar Dressing
+    - Olive Oil
+    - Pesto Mayonnaise Spread
+    - Sliced Pepperoncini
+    - Italian Bread
+    - Red Wine Vinegar
+    - Jalapeno Pepper
+    - Tomato Slices
+    - Smoked Ham
+    - Swiss Cheese
+    - Mayonnaise
+    - Fresh Red Onions
+    - Peppers And Onion Mix
+    - Provolone Cheese
+    - Dill Pickle Chips
+    - Deli Turkey Breast
+    - White Sub Roll
+    - Chipotle Mayonnaise
+    - Spinach Herb Tortilla
+  Med Coast Lunch:
+    - Rigatoni Pasta
+    - Alfredo Sauce
+    - Cheese Breadsticks
+    - Marinara Sauce
+  Mix Salad Bar:
+    - Sliced Black Olives
+    - Craisins
+    - Sauteed Red And Green Peppers
+    - Avocado Lime Dressing
+    - Roasted Portobello Mushrooms
+    - Fresh Broccoli Florets
+    - Spring Mix
+    - Shredded Carrots
+    - Pickled Red Onions
+    - Spiced Pepitas
+    - Chipotle Orange Dressing
+    - Diced Grilled/roasted Chicken Breast
+    - Oil And Vinegar
+    - Fresh Spinach
+    - Cherry Tomatoes
+    - Crumbled Bacon
+    - Fresh Cucumber
+    - Chopped Romaine
+    - Plain Quinoa
+    - Chickpeas
+    - Sliced Pepperoncini
+  Mix Special Toppings:
+    - Thousand Island Dressing
+    - Robusto Caesar Dressing
+    - Hardboiled Eggs
+    - Asian Sesame Dressing
+    - Homestyle Croutons
+    - Whole Grain Honey Mustard Dressing
+    - Roasted Unsalted Sunflower Seeds
+    - Fat Free Italian Dressing
+    - Sweet & Sour Broccoli Salad
+    - Shredded Cheddar Cheese
+    - Shredded Parmesan Cheese
+  Simple Lunch:
+    - Spicy Corn And Zucchini Fritters
+    - Sweet Potato Hash
+    - Kansas City Bbq Beef
+    - Sauteed Collard Greens
+  Slices:
+    - Cheese Pizza
+    - Vegetable Lovers Feast Pizza
+    - Pepperoni Pizza
+  Soup:
+    - Potato Leek Soup
+  Spikes Lunch:
+    - Sea Salt Dusted Deli Chips
+    - French Fries
+    - Chicken Parmesan Sandwich
+    - Black Bean Burger
+    - Breaded Fish Sandwich
+    - Cheeseburger
+    - Hamburger
+  Spoonfuls:
+    - Fish Chowder
+  Toast Bar:
+    - Classic Hummus
+    - Whipped Butter
+    - Smashed Avocado
+    - Hard-boiled Egg
+    - Sliced Red Radish
+    - Fresh Spinach
+    - Grape Jelly
+    - Cherry Tomatoes
+  Waffle Bar:
+    - Vanilla Belgian Waffle
+    - Whipped Butter
+    - Chocolate Syrup
+    - Blueberries
+    - Whipped Cream
+  Zagriculture Lunch:
+    - Mediterranean Bruschetta Flatbread
+    - Mindful Vegetarian Lentil Soup
+    - Punjabi Tofu Curry
+    - Cilantro Slaw
+
+Afternoon Snack:
+  Uncategorized:
+    - Have A Nice Day
+  Deli:
+    - Sliced Black Olives
+    - Cheddar Cheese
+    - Pesto Mayonnaise Spread
+    - Sliced Pepperoncini
+    - Tuna Salad
+    - Olive Oil
+    - Peppers And Onion Mix
+    - Roasted Portobello Mushrooms
+    - Mayonnaise
+    - White Sub Roll
+    - Smoked Ham
+    - Chipotle Mayonnaise
+    - Fresh Arugula
+    - Red Wine Vinegar
+    - Italian Bread
+    - Tomato Slices
+    - Jalapeno Pepper
+    - Dill Pickle Chips
+    - Yellow Mustard
+    - Spinach Herb Tortilla
+    - Sourdough Bread
+    - Deli Turkey Breast
+    - Green Leaf Lettuce
+    - Fresh Red Onions
+    - Provolone Cheese
+    - Robusto Caesar Dressing
+    - Swiss Cheese
+  Mix Salad Bar:
+    - Spiced Pepitas
+    - Plain Quinoa
+    - Fresh Broccoli Florets
+    - Sliced Black Olives
+    - Diced Grilled/roasted Chicken Breast
+    - Chickpeas
+    - Shredded Carrots
+    - Chopped Romaine
+    - Avocado Lime Dressing
+    - Fresh Cucumber
+    - Craisins
+    - Fresh Spinach
+    - Oil And Vinegar
+    - Spring Mix
+    - Crumbled Bacon
+    - Pickled Red Onions
+    - Chipotle Orange Dressing
+    - Sauteed Red And Green Peppers
+    - Cherry Tomatoes
+    - Roasted Portobello Mushrooms
+    - Sliced Pepperoncini
+  Mix Special Toppings:
+    - Roasted Unsalted Sunflower Seeds
+    - Shredded Cheddar Cheese
+    - Homestyle Croutons
+    - Whole Grain Honey Mustard Dressing
+    - Hardboiled Eggs
+    - Asian Sesame Dressing
+    - Thousand Island Dressing
+    - Shredded Parmesan Cheese
+    - Fat Free Italian Dressing
+    - Robusto Caesar Dressing
+  Simple Mid Day:
+    - Simple Steakhouse Salad
+  Slices:
+    - Pepperoni Pizza
+    - Cheese Pizza
+  Spikes Mid Day:
+    - Chicken Parmesan Sandwich
+    - Hamburger
+    - Sea Salt Dusted Deli Chips
+    - Cheeseburger
+    - Breaded Fish Sandwich
+    - Black Bean Burger
+    - French Fries
+  Toast Bar:
+    - Classic Hummus
+    - Fresh Spinach
+    - Sliced Red Radish
+    - Hard-boiled Egg
+    - Grape Jelly
+    - Whipped Butter
+    - Smashed Avocado
+    - Cherry Tomatoes
+  Waffle Bar:
+    - Whipped Cream
+    - Whipped Butter
+    - Blueberries
+    - Vanilla Belgian Waffle
+    - Chocolate Syrup
+
+Dinner:
+  Uncategorized:
+    - Have A Nice Day
+  360 Dinner:
+    - Jasmine Rice (steamed)
+    - Asian Vegetables
+    - Szechuan Top Round Steak
+  Bliss:
+    - Homestyle Cheesecake
+    - Homestyle Chocolate Chip Cookie
+    - Vanilla Cupcake
+    - Caramel Macchiato Cake
+  Deli:
+    - Sourdough Bread
+    - Swiss Cheese
+    - Pesto Mayonnaise Spread
+    - Fresh Red Onions
+    - Provolone Cheese
+    - Tuna Salad
+    - Dill Pickle Chips
+    - Peppers And Onion Mix
+    - Red Wine Vinegar
+    - Yellow Mustard
+    - Deli Turkey Breast
+    - Mayonnaise
+    - Robusto Caesar Dressing
+    - Jalapeno Pepper
+    - Sliced Pepperoncini
+    - Fresh Arugula
+    - Olive Oil
+    - Italian Bread
+    - Roasted Portobello Mushrooms
+    - Smoked Ham
+    - Green Leaf Lettuce
+    - Sliced Black Olives
+    - Cheddar Cheese
+    - White Sub Roll
+    - Whipped Butter
+    - Tomato Slices
+    - Spinach Herb Tortilla
+    - Chipotle Mayonnaise
+  Med Coast Dinner:
+    - Rigatoni Pasta
+    - Alfredo Sauce
+    - Marinara Sauce
+    - Cheese Breadsticks
+  Mix Salad Bar:
+    - Sliced Pepperoncini
+    - Diced Grilled/roasted Chicken Breast
+    - Spring Mix
+    - Roasted Corn
+    - Sauteed Red And Green Peppers
+    - Craisins
+    - Cherry Tomatoes
+    - Spiced Pepitas
+    - Crumbled Bacon
+    - Shredded Carrots
+    - Fresh Spinach
+    - Avocado Lime Dressing
+    - Plain Quinoa
+    - Fresh Broccoli Florets
+    - Pickled Red Onions
+    - Fresh Cucumber
+    - Oil And Vinegar
+    - Chipotle Orange Dressing
+    - Chopped Romaine
+    - Chickpeas
+    - Sliced Black Olives
+  Mix Special Toppings:
+    - Sweet & Sour Broccoli Salad
+    - Shredded Cheddar Cheese
+    - Roasted Unsalted Sunflower Seeds
+    - Asian Sesame Dressing
+    - Hardboiled Eggs
+    - Roasted Portobello Mushrooms
+    - Homestyle Croutons
+    - Whole Grain Honey Mustard Dressing
+    - Thousand Island Dressing
+    - Robusto Caesar Dressing
+    - Fat Free Italian Dressing
+  Simple Dinner:
+    - Mexican Red Rice
+    - Adobo Roasted Turkey Breast
+    - Black Bean, Corn And Cilantro Salad
+    - Grilled Mexican Vegetables
+  Slices:
+    - Cheese Pizza
+    - Vegetable Lovers Feast Pizza
+    - Pepperoni Pizza
+  Soup:
+    - Potato Leek Soup
+  Spikes Dinner:
+    - Breaded Fish Sandwich
+    - French Fries
+    - Chicken Parmesan Sandwich
+    - Cheeseburger
+    - Sea Salt Dusted Deli Chips
+    - Black Bean Burger
+    - Hamburger
+  Spoonfuls:
+    - Mindful Vegetarian Lentil Soup
+    - Fish Chowder
+  Toast Bar:
+    - Smashed Avocado
+    - Fresh Spinach
+    - Classic Hummus
+    - Hard-boiled Egg
+    - Sliced Red Radish
+    - Cherry Tomatoes
+    - Grape Jelly
+  Waffle Bar:
+    - Whipped Butter
+    - Chocolate Syrup
+    - Whipped Cream
+    - Blueberries
+    - Vanilla Belgian Waffle
+  Zagriculture Dinner:
+    - Mediterranean Bruschetta Flatbread
+    - Indian Samosa Bowl
+
