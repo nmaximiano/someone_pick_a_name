@@ -2,6 +2,22 @@ import cv2
 import numpy as np
 import mediapipe as mp
 
+size_x = 640
+size_y = 480
+
+def coord_in_bounds(x, y):
+    return (x >= 0 and x < size_x) and (y >= 0 and y < size_y)
+
+def get_average_color(frame, center, radius):
+    total = [0, 0, 0]
+    for x in range(-radius, radius):
+        for y in range(-radius, radius):
+            total += frame[center[1] + y][center[0] + x]
+
+    return total / (radius * radius * 4)
+
+display_image = True
+
 # initialize the HOG descriptor/person detector
 hog = cv2.HOGDescriptor()
 hog.setSVMDetector(cv2.HOGDescriptor_getDefaultPeopleDetector())
@@ -20,7 +36,8 @@ while(True):
     ret, frame = cap.read()
 
     # resizing for faster detection
-    frame = cv2.resize(frame, (640, 480))
+    frame = cv2.resize(frame, (size_x, size_y))
+
     # using a greyscale picture, also for faster detection
     gray = cv2.cvtColor(frame, cv2.COLOR_RGB2GRAY)
 
@@ -46,11 +63,14 @@ while(True):
         center_x = int((x1 + x2) / 2)
         center_y = int((y1 + y2) / 2)
 
+        print(get_average_color(frame, [center_x, center_y], 25))
+
         # Draw a dot (a filled circle) at the center
         cv2.circle(frame, (center_x, center_y), radius=5, color=(0, 0, 255), thickness=-1)
     
     # Display the resulting frame
-    cv2.imshow('frame',frame)
+    if display_image:
+        cv2.imshow('frame',frame)
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
 
