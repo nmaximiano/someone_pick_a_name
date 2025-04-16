@@ -1,5 +1,6 @@
 import cv2
 import numpy as np
+import mediapipe as mp
 
 # initialize the HOG descriptor/person detector
 hog = cv2.HOGDescriptor()
@@ -10,12 +11,9 @@ cv2.startWindowThread()
 # open webcam video stream
 cap = cv2.VideoCapture(0)
 
-# the output will be written to output.avi
-out = cv2.VideoWriter(
-    'output.avi',
-    cv2.VideoWriter_fourcc(*'MJPG'),
-    15.,
-    (640,480))
+mp_pose = mp.solutions.pose
+pose = mp_pose.Pose()
+mp_drawing = mp.solutions.drawing_utils
 
 while(True):
     # Capture frame-by-frame
@@ -26,32 +24,39 @@ while(True):
     # using a greyscale picture, also for faster detection
     gray = cv2.cvtColor(frame, cv2.COLOR_RGB2GRAY)
 
-    # detect people in the image
-    # returns the bounding boxes for the detected objects
-    boxes, weights = hog.detectMultiScale(frame, winStride=(8,8) )
+    image = frame
+    rgb = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+    results = pose.process(rgb)
 
-    boxes = np.array([[x, y, x + w, y + h] for (x, y, w, h) in boxes])
+    if results.pose_landmarks:
+        h, w, _ = image.shape
+        landmarks = results.pose_landmarks.landmark
 
-    for box in boxes:
-        if len(box) == 4:
-            print([box[0] * 2 - box[2], box[1] * 2 - box[3]])
+        # Get shoulder and hip coordinates
+        l_shoulder = landmarks[mp_pose.PoseLandmark.LEFT_SHOULDER]
+        r_shoulder = landmarks[mp_pose.PoseLandmark.RIGHT_SHOULDER]
+        l_hip = landmarks[mp_pose.PoseLandmark.LEFT_HIP]
+        r_hip = landmarks[mp_pose.PoseLandmark.RIGHT_HIP]
 
-    for (xA, yA, xB, yB) in boxes:
-        # display the detected boxes in the colour picture
-        cv2.rectangle(frame, (xA, yA), (xB, yB),
-                          (0, 255, 0), 2)
+        x1 = int(min(l_shoulder.x, r_shoulder.x) * w)
+        x2 = int(max(l_shoulder.x, r_shoulder.x) * w)
+        y1 = int(min(l_shoulder.y, r_shoulder.y) * h)
+        y2 = int(max(l_hip.y, r_hip.y) * h)
+
+        center_x = int((x1 + x2) / 2)
+        center_y = int((y1 + y2) / 2)
+
+        # Draw a dot (a filled circle) at the center
+        cv2.circle(frame, (center_x, center_y), radius=5, color=(0, 0, 255), thickness=-1)
     
-    # Write the output video 
-    out.write(frame.astype('uint8'))
     # Display the resulting frame
     cv2.imshow('frame',frame)
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
 
+pose.close()
 # When everything done, release the capture
 cap.release()
-# and release the output
-out.release()
 # finally, close the window
 cv2.destroyAllWindows()
 cv2.waitKey(1)
