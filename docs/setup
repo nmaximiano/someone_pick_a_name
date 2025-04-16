@@ -12,3 +12,8 @@ Forwarding                    https://ee2d-147-222-244-67.ngrok-free.app
 and put it into the webhook in to twilio under messenging services on their website 
 
 has to be kept running at all times everytime it turns off you will have to run ngrok http 5000 everytime and get the forwarding
+
+twilio login 
+
+anthonyhidalgo365@gmail.com
+TonyJo$7 
