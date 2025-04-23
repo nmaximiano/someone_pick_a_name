@@ -9,12 +9,14 @@ def coord_in_bounds(x, y):
     return (x >= 0 and x < size_x) and (y >= 0 and y < size_y)
 
 def get_average_color(frame, center, radius):
-    total = [0, 0, 0]
+    total = frame[center[1]][center[0]].astype(np.float64).copy()
+    steps = 1
     for x in range(-radius, radius):
         for y in range(-radius, radius):
-            total += frame[center[1] + y][center[0] + x]
-
-    return total / (radius * radius * 4)
+            if coord_in_bounds(center[0] + x, center[1] + y):
+                total += frame[center[1] + y][center[0] + x]
+                steps += 1
+    return total / steps
 
 display_image = True
 
@@ -63,10 +65,15 @@ while(True):
         center_x = int((x1 + x2) / 2)
         center_y = int((y1 + y2) / 2)
 
-        print(get_average_color(frame, [center_x, center_y], 25))
+        if coord_in_bounds(center_x, center_y):
+            color = get_average_color(rgb, [center_x, center_y], 50)
+            print(color)
 
-        # Draw a dot (a filled circle) at the center
-        cv2.circle(frame, (center_x, center_y), radius=5, color=(0, 0, 255), thickness=-1)
+             # Draw a dot (a filled circle) at the center
+            if abs(center_x - size_x / 2) < 50:
+                cv2.circle(frame, (center_x, center_y), radius=5, color=(0, 0, 255), thickness=-1)
+            else:
+                cv2.circle(frame, (center_x, center_y), radius=50, color=(color[2], color[1], color[0]), thickness=-1)
     
     # Display the resulting frame
     if display_image:
