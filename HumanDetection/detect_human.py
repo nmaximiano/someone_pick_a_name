@@ -5,6 +5,9 @@ import mediapipe as mp
 size_x = 640
 size_y = 480
 
+previous_color = None
+color_tolerance = 30
+
 def coord_in_bounds(x, y):
     return (x >= 0 and x < size_x) and (y >= 0 and y < size_y)
 
@@ -67,13 +70,25 @@ while(True):
 
         if coord_in_bounds(center_x, center_y):
             color = get_average_color(rgb, [center_x, center_y], 50)
-            print(color)
 
              # Draw a dot (a filled circle) at the center
             if abs(center_x - size_x / 2) < 50:
                 cv2.circle(frame, (center_x, center_y), radius=5, color=(0, 0, 255), thickness=-1)
             else:
                 cv2.circle(frame, (center_x, center_y), radius=50, color=(color[2], color[1], color[0]), thickness=-1)
+
+            if abs(center_x - size_x / 2) < 50:
+                if previous_color is not None:
+                    difference = abs(previous_color - color)
+                    norm = np.sqrt(difference[0]**2 + difference[1]**2 + difference[2]**2)
+                    if norm > color_tolerance:
+                        print("New Person! ", color)
+
+                previous_color = color
+            else:
+                if previous_color is not None:
+                    previous_color = None
+                    print("New Person! ", color)
     
     # Display the resulting frame
     if display_image:
