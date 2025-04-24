@@ -8,6 +8,39 @@ size_y = 480
 previous_color = None
 color_tolerance = 30
 
+person_data = {}
+
+def person_enter():
+    with open("./sms/people.txt", "r+") as file:
+        people = file.read()
+        try:
+            people = int(people)
+        except:
+            people = 0
+        people += 1
+        file.truncate(0)
+        file.seek(0)
+        file.write(str(people)) 
+
+def person_exit():
+    with open("./sms/people.txt", "r+") as file:
+        people = file.read()
+        try:
+            people = int(people)
+        except:
+            people = 0
+        people -= 1
+        file.truncate(0)
+        file.seek(0)
+        file.write(str(people)) 
+
+def handle_person_exit():
+    delta = person_data["entry"]["x"] - person_data["exit"]["x"]
+    if delta > 0:
+        person_enter()
+    elif delta < 0:
+        person_exit()
+
 def coord_in_bounds(x, y):
     return (x >= 0 and x < size_x) and (y >= 0 and y < size_y)
 
@@ -83,12 +116,28 @@ while(True):
                     norm = np.sqrt(difference[0]**2 + difference[1]**2 + difference[2]**2)
                     if norm > color_tolerance:
                         print("New Person! ", color)
+                        person_data["entry"] = {
+                            "color" : color,
+                            "x" : center_x
+                        }
+                else:
+                    print("Person Entered! ", color)
+                    person_data["entry"] = {
+                        "color" : color,
+                        "x" : center_x
+                    }
 
                 previous_color = color
             else:
                 if previous_color is not None:
                     previous_color = None
-                    print("New Person! ", color)
+                    print("Person Exited! ", color)
+                    person_data["exit"] = {
+                        "color" : color,
+                        "x" : center_x
+                    }
+                    handle_person_exit()
+                    
     
     # Display the resulting frame
     if display_image:
