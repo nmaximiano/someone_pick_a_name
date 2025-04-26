@@ -1,0 +1,75 @@
+Dinner:
+  360 Dinner:
+    - Grilled Huli Huli Chicken
+    - Classic Macaroni Salad
+    - Pineapple Rice
+    - Bok Choy Stir Fry
+  Bliss:
+    - Two Carnival Cookies
+    - Yellow Cupcakes With Vanilla Icing
+  Deli:
+    - Ham & Cheese Sub
+  Miscellaneous:
+    - Have A Nice Day
+  Mix Salad Bar:
+    - Chickpeas
+    - Avocado Lime Dressing
+    - Chopped Romaine
+    - Shredded Carrots
+    - Pickled Red Onions
+    - Fresh Broccoli Florets
+    - Crumbled Bacon
+    - Diced Grilled/roasted Chicken Breast
+    - Fresh Cucumber
+    - Craisins
+    - Fresh Spinach
+    - Roasted Corn
+    - Oil And Vinegar
+    - Spiced Pepitas
+    - Cherry Tomatoes
+    - Chipotle Orange Dressing
+    - Sauteed Red And Green Peppers
+    - Spring Mix
+    - Sliced Black Olives
+    - Sliced Pepperoncini
+    - Plain Quinoa
+  Mix Special Toppings:
+    - Roasted Unsalted Sunflower Seeds
+    - Whole Grain Honey Mustard Dressing
+    - Thousand Island Dressing
+    - Asian Sesame Dressing
+    - Hardboiled Eggs
+    - Robusto Caesar Dressing
+    - Homestyle Croutons
+    - Roasted Portobello Mushrooms
+    - Fat Free Italian Dressing
+    - Balsamic Broccoli Pasta Salad
+    - Shredded Cheddar Cheese
+  Pizza To Go:
+    - Pepperoni Pizza
+    - Cheese Pizza
+  Simple Dinner:
+    - Grilled Flank Steak
+    - Crispy Garlic Potato Wedges
+    - Roasted Broccoli & Cauliflower
+    - Quinoa With Squash, Tomatoes And Basil
+  Slices:
+    - Flatbread
+  Spikes Dinner:
+    - Four Cheese Creamy Mac And Cheese
+  Toast Bar:
+    - Sliced Red Radish
+    - Whipped Butter
+    - Grape Jelly
+    - Hard-boiled Egg
+    - Smashed Avocado
+    - Fresh Spinach
+    - Classic Hummus
+    - Cherry Tomatoes
+  Waffle Bar:
+    - Blueberries
+    - Whipped Butter
+    - Vanilla Belgian Waffle
+    - Chocolate Syrup
+    - Whipped Cream
+
