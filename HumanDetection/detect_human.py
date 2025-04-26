@@ -36,9 +36,9 @@ def person_exit():
 
 def handle_person_exit():
     delta = person_data["entry"]["x"] - person_data["exit"]["x"]
-    if delta > 0:
+    if delta > 10:
         person_enter()
-    elif delta < 0:
+    elif delta < -10:
         person_exit()
 
 def coord_in_bounds(x, y):
