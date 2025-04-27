@@ -1,7 +1,10 @@
 import cv2
 import numpy as np
 import mediapipe as mp
-from picamera2 import Picamera2
+
+OS = "Windows"
+if OS == "Linux":
+    from picamera2 import Picamera2
 
 size_x = 640
 size_y = 480
@@ -11,7 +14,7 @@ color_tolerance = 30
 
 person_data = {}
 
-OS = "Windows"
+
 
 def person_enter():
     with open("./sms/people.txt", "r+") as file:
