@@ -1,6 +1,7 @@
 import cv2
 import numpy as np
 import mediapipe as mp
+from picamera2 import Picamera2
 
 size_x = 640
 size_y = 480
@@ -36,9 +37,9 @@ def person_exit():
 
 def handle_person_exit():
     delta = person_data["entry"]["x"] - person_data["exit"]["x"]
-    if delta > 10:
+    if delta > 0:
         person_enter()
-    elif delta < -10:
+    elif delta < 0:
         person_exit()
 
 def coord_in_bounds(x, y):
@@ -63,7 +64,13 @@ hog.setSVMDetector(cv2.HOGDescriptor_getDefaultPeopleDetector())
 cv2.startWindowThread()
 
 # open webcam video stream
-cap = cv2.VideoCapture(0)
+#cap = cv2.VideoCapture(0)
+
+picam2 = Picamera2()
+picam2.preview_configuration.main.size = (size_x, size_y)
+picam2.preview_configuration.main.format = "RGB888"
+picam2.configure("preview")
+picam2.start()
 
 mp_pose = mp.solutions.pose
 pose = mp_pose.Pose()
@@ -71,9 +78,13 @@ mp_drawing = mp.solutions.drawing_utils
 
 while(True):
     # Capture frame-by-frame
-    ret, frame = cap.read()
+    #ret, frame = cap.read()
+    frame = picam2.capture_array()
+    frame = cv2.cvtColor(frame, cv2.COLOR_RGB2BGR)
 
     # resizing for faster detection
+    if frame is None:
+        continue
     frame = cv2.resize(frame, (size_x, size_y))
 
     # using a greyscale picture, also for faster detection
@@ -148,6 +159,8 @@ while(True):
 pose.close()
 # When everything done, release the capture
 cap.release()
+picam2.stop()
 # finally, close the window
 cv2.destroyAllWindows()
 cv2.waitKey(1)
+
